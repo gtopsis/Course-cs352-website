@@ -1,0 +1,185 @@
+// Global styling for this template
+body {
+  overflow-x: hidden;
+  @include body-font;
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: $theme-primary;
+  &.active,
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken($theme-primary, 10%);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  @include heading-font;
+}
+
+section {
+  padding: 100px 0;
+  h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    @include serif-font;
+  }
+}
+
+@media(min-width:768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $theme-primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $theme-primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+body {
+  -webkit-tap-highlight-color: $theme-primary;
+}
+
+.bg-cloud-color {
+  background-color: #ecf0f1 !important;
+}
+
+.light-orange-color {
+  color: #f39c12!important;
+}
+
+.table-element-title {
+  width: 90%;
+}
+
+.table-element-files {
+  width: 10%;
+  text-align: right;
+}
+
+.table-element-files>a {
+  margin: 0 5px;
+}
+
+.table-element-files>a:hover {
+  cursor: pointer;
+  color: #f39c12!important;
+}
+
+.empty-content-msg {
+  color: #aaa;
+  font-size: 1.1em;
+}
+
+.tabbable-line>.nav-tabs {
+  border: none;
+  margin: 10px;
+  text-align: center;
+}
+
+.tabbable-line>.nav-tabs>li {
+  padding: 12px;
+}
+
+.tabbable-line>.nav-tabs>li>a {
+  border: 0;
+  margin-right: 0;
+  color: #737373;
+}
+
+.tabbable-line>.nav-tabs>li>a>i {
+  color: #a6a6a6;
+}
+
+.tabbable-line>.nav-tabs>li:hover a {
+  color: rgb(243, 156, 18);
+}
+
+.tabbable-line>.nav-tabs>li.open>a,
+.tabbable-line>.nav-tabs>li:hover>a {
+  border: 0;
+  background: none !important;
+}
+
+.tabbable-line>.nav-tabs>li.open>a>i,
+.tabbable-line>.nav-tabs>li:hover>a>i {
+  color: #a6a6a6;
+}
+
+div.tabbable-line ul.nav.nav-tabs li.active a,
+div.tabbable-line ul.nav.nav-tabs li a.active {
+  border-bottom: 4px solid rgb(243, 156, 18);
+  color: rgb(243, 156, 18);
+  display: block;
+}
+
+.tabbable-line>.nav-tabs>li>a.active>i {
+  color: #404040;
+}
+
+.tabbable-line>.tab-content {
+  margin-top: -3px;
+  padding: 15px 0;
+  min-height: 500px;
+}
+
+a.selected-lang {
+  color: white!important;
+}
+
+.lang-box {
+  display: none; // TODO: remove it when you will fix a mechanism for the multilang site
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
+  color: grey;
+  width: 150px;
+  font-size: 0.9em;
+}
+
+.lang-box a {
+  color: #aaa;
+  margin: 0 5px;
+}
+
+.lang-box a:hover {
+  color: white;
+}
+
+#unlockFilesForm{
+  margin-bottom: 30px;
+}

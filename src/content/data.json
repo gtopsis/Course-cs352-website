@@ -1,0 +1,617 @@
+{
+    "stealMeKey": "fffa64ae40fbfa64f556290c56b356eea67e3cd852f7f303944ecfd041c02be2",
+    "Header": {
+        "Menu": {
+            "Gr": ["Πληροφοριες", "Διαλεξεις", "Επιπλεον υλικο", "Εργασια", "Πηγες"],
+            "En": ["Main", "Lectures", "Extra Material", "Project", "Resources"]
+        },
+        "Intro": {
+            "Lead": {
+                "Gr": "Επιστήμης Υπολογιστών, Πανεπιστήμιο Κρήτης",
+                "En": "Computer Science Department, University of Crete"
+            },
+            "Heading": {
+                "Gr": "Τεχνολογια Λογισμικου",
+                "En": "Software Engineering"
+            },
+            "Details": {
+                "Gr": ["Διδάσκων: Σαββίδης Αντώνης", "ECTS:6", "Προαπαιτούμενα: HY-150, HY252", "Μάθημα Επιλογής"],
+                "En": ["Teacer: Savidis Anthony", "ECTS:6", "Prerequisites: HY-150, HY252", "Elective Course"]
+            }
+        }
+    },
+    "MainInfo": {
+        "Header": {
+            "Gr": "Πληροφοριες",
+            "En": "Main information"
+        },
+        "Description": {
+            "Gr": {
+                "Header": "Περιγραφή",
+                "Text": "Βασικός σκοπός του μαθήματος είναι η παρουσίαση και ανάλυση των στρατηγικών και μεθόδων σχεδίασης και ανάπτυξης λογισμικού (software engineering), ώστε εκτός από την απλή ικανοποίηση των εκάστοτε λειτουργικών προδιαγραφών (functional specifications), να εξασφαλίζεται ελαχιστοποίηση λαθών και εύκολος εντοπισμός τους (error proneness, robustness, defect detection), επεκτασιμότητα (extensibility), εύκολη και ασφαλής τροποποίηση (effective and efficient modification support), επαναχρησιμοποίηση (re - usability), δυνατότητα μεταφοράς σε άλλες πλατφόρμες (portability), ελαχιστοποίηση μεγέθους υλοποίησης (code reduction) καθώς επίσης και απλότητα και αυτό - τεκμηρίωση (simplicity and self - documentation). Οι ιδιότητες αυτές, οι οποίες στο σύνολο τους αποτελούν μέτρο ποιότητας λογισμικού(software quality), θα μελετηθούν κυρίως στο επίπεδο κατασκευής μεγάλων συστημάτων λογισμικού(large scale software development), όπου εμπλέκονται αφενός αρκετοί δημιουργοί λογισμικού(software developers) και αφετέρου πολλαπλές τεχνολογίες υλοποίησης(implementation technologies).Η μεγαλύτερη έμφαση θα δοθεί στον ρόλο της αρχιτεκτονικής(software architecture), των σχεδιαστικών προτύπων(software design patterns), των στοιχείων της οντοκεντρικής σχεδίασης και προγραμματισμού(object oriented design and programming), και του αμυντικού προγραμματισμού(defensive programming), με παρουσίαση των πιο προηγμένων και εξελιγμένων τεχνικών που εφαρμόζονται σήμερα στα μεγάλα συστήματα λογισμικού, όπως ακραίος προγραμματισμός(extreme programming)."
+            },
+            "En": {
+                "Header": "Description",
+                "Text": ""
+            }
+        },
+        "Contact": {
+            "Gr": {
+                "Header": "Επικοινωνία",
+                "Teacher": {
+                    "Name": "Σαββίδης Αντώνης",
+                    "Email": "as [at] ics.forth.gr"
+                },
+                "CourseList": {
+                    "Name": "Λίστα Μαθήματος (όλοι)",
+                    "Email": "hy352-list [at] csd.uoc.gr"
+                },
+                "TAList": {
+                    "Name": "Λίστα Βοηθών",
+                    "Email": "hy352-list [at] csd.uoc.gr"
+                },
+                "TAs": [{
+                        "Name": "Βαλσαμάκης Γιάννης",
+                        "Email": "jvalsam [at] csd.uoc.gr"
+                    },
+                    {
+                        "Name": "Τοψής Γιώργος",
+                        "Email": "topsis [at] csd.uoc.gr"
+                    },
+                    {
+                        "Name": "Δαγκαλάκης Σταύρος",
+                        "Email": "dagalakis [at] csd.uoc.gr"
+                    }
+                ]
+            },
+            "En": {
+                "Header": "Contact",
+                "Teacher": {
+                    "Name": "Savidis Anthony",
+                    "Email": "as [at] ics.forth.gr"
+                },
+                "CourseList": {
+                    "Name": "Course List (all)",
+                    "Email": "hy352-list [at] csd.uoc.gr"
+                },
+                "TAList": {
+                    "Name": "List of TAs",
+                    "Email": "hy352 [at] csd.uoc.gr"
+                },
+                "TAs": [{
+                        "Name": "Valsamakis Giannis",
+                        "Email": "jvalsam [at] csd.uoc.gr"
+                    },
+                    {
+                        "Name": "Topsis Giorgos",
+                        "Email": "topsis [at] csd.uoc.gr"
+                    },
+                    {
+                        "Name": "Stauros Dagalakis",
+                        "Email": "dagalakis [at] csd.uoc.gr"
+                    }
+                ]
+            }
+        },
+        "Schedule": {
+            "Gr": {
+                "Header": "Προγραμμα",
+                "Set": [{
+                        "Day": "Τρίτη",
+                        "Time": {
+                            "Start": "10:00",
+                            "End": "12:00"
+                        },
+                        "Type": "Διάλεξη",
+                        "Classroom": "H. 204"
+                    },
+                    {
+                        "Day": "Πέμπτη",
+                        "Time": {
+                            "Start": "10:00",
+                            "End": "12:00"
+                        },
+                        "Type": "Διάλεξη",
+                        "Classroom": "H. 204"
+                    },
+                    {
+                        "Day": "Παρασκευή",
+                        "Time": {
+                            "Start": "16:00",
+                            "End": "18:00"
+                        },
+                        "Type": "Φροντηστήριο",
+                        "Classroom": "Α. 113"
+                    }
+                ]
+            },
+            "En": {
+                "Header": "Schedule",
+                "Set": [{
+                        "Day": "Thusday",
+                        "Time": {
+                            "Start": "10:00",
+                            "End": "12:00"
+                        },
+                        "Type": "Lecture",
+                        "Classroom": "H. 204"
+                    },
+                    {
+                        "Day": "Thursday",
+                        "Time": {
+                            "Start": "10:00",
+                            "End": "12:00"
+                        },
+                        "Type": "Lecture",
+                        "Classroom": "H. 204"
+                    },
+                    {
+                        "Day": "Friday",
+                        "Time": {
+                            "Start": "16:00",
+                            "End": "18:00"
+                        },
+                        "Type": "Tutorial",
+                        "Classroom": "Α. 113"
+                    }
+                ]
+            }
+        }
+    },
+    "Lectures": {
+        "Gr": {
+            "Header": "Διαλεξεις",
+            "All": {
+                "Files": {
+                    "PdfUrl": "files/lecture/zip/all_lectures_pdf.zip",
+                    "PptxUrl": "files/lecture/zip/all_lectures_pptx.zip"
+                }
+            },
+            "Set": [{
+                    "Title": "Εισαγωγή",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/1. Intro.pdf",
+                        "PptxUrl": "files/lecture/pptx/1. Intro.pptx"
+                    }
+                },
+                {
+                    "Title": "Αρχιτεκτονική Σχεδίαση και Οικογένειες Αρχιτεκτονικών (I)",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/2. ArchI.pdf",
+                        "PptxUrl": "files/lecture/pptx/2. ArchI.pptx"
+                    }
+                },
+                {
+                    "Title": "Αρχιτεκτονική Σχεδίαση και Οικογένειες Αρχιτεκτονικών (II)",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/3.ArchII.pdf",
+                        "PptxUrl": "files/lecture/pptx/3.ArchII.pptx"
+                    }
+                },
+                {
+                    "Title": "Σχεδιαστικές Προοπτικές και Δομημένος Προγραμματισμός (I)",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/4.DesignViews.pdf",
+                        "PptxUrl": "files/lecture/pptx/4.DesignViews.pptx"
+                    }
+                },
+                {
+                    "Title": "Σχεδιαστικές Προοπτικές και Δομημένος Προγραμματισμός (II)",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/5.StructuredProg.pdf",
+                        "PptxUrl": "files/lecture/pptx/5.StructuredProg.pptx"
+                    }
+                },
+                {
+                    "Title": "Στοιχεία Οντοκεντρικού Προγραμματισμού (I)",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/6.OOPI.pdf",
+                        "PptxUrl": "files/lecture/pptx/6.OOPI.pptx"
+                    }
+                },
+                {
+                    "Title": "Στοιχεία Οντοκεντρικού Προγραμματισμού (II)",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/7.OOPII.pdf",
+                        "PptxUrl": "files/lecture/pptx/7.OOPII.pptx"
+                    }
+                },
+                {
+                    "Title": "Στοιχεία Οντοκεντρικού Προγραμματισμού (III)",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/8.OOPIII.pdf",
+                        "PptxUrl": "files/lecture/pptx/8.OOPIII.pptx"
+                    }
+                },
+                {
+                    "Title": "Στοιχεία Οντοκεντρικού Προγραμματισμού (IV)",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/9.OOPIV.pdf",
+                        "PptxUrl": "files/lecture/pptx/9.OOPIV.pptx"
+                    }
+                },
+                {
+                    "Title": "Στοιχεία Οντοκεντρικού Προγραμματισμού (V)",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/10.OOPV.pdf",
+                        "PptxUrl": "files/lecture/pptx/10.OOPV.pptx"
+                    }
+                },
+                {
+                    "Title": "Στοιχεία Οντοκεντρικού Προγραμματισμού (VI)",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/11.OOPVI.pdf",
+                        "PptxUrl": "files/lecture/pptx/11.OOPVI.pptx"
+                    }
+                },
+                {
+                    "Title": "Στοιχεία Οντοκεντρικού Προγραμματισμού (VII)",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/12.OOPVII.pdf",
+                        "PptxUrl": "files/lecture/pptx/12.OOPVII.pptx"
+                    }
+                },
+                {
+                    "Title": "Generic Programming",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/13.GenericProg.pdf",
+                        "PptxUrl": "files/lecture/pptx/13.GenericProg.pptx"
+                    }
+                },
+                {
+                    "Title": "Σχεδιαστικά Πρότυπα (I)",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/14.DesignPatternsI.pdf",
+                        "PptxUrl": "files/lecture/pptx/14.DesignPatternsI.pptx"
+                    }
+                },
+                {
+                    "Title": "Σχεδιαστικά Πρότυπα (II)",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/15.DesignPatternsII.pdf",
+                        "PptxUrl": "files/lecture/pptx/15.DesignPatternsII.pptx"
+                    }
+                },
+                {
+                    "Title": "Σχεδιαστικά Πρότυπα (III)",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/Lecture16_pdf.pdf",
+                        "PptxUrl": "files/lecture/pptx/Lecture16_pptx.pptx"
+                    }
+                },
+                {
+                    "Title": "Σχεδιαστικά Πρότυπα (IV)",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/Lecture17_pdf.pdf",
+                        "PptxUrl": "files/lecture/pptx/Lecture17_pptx.pptx"
+                    }
+                },
+                {
+                    "Title": "Σχεδιαστικά Πρότυπα (V)",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/Lecture18_pdf.pdf",
+                        "PptxUrl": "files/lecture/pptx/Lecture18_pptx.pptx"
+                    }
+                },
+                {
+                    "Title": "Οδηγίες καλού προγραμματισμού",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/Lecture19_pdf.pdf",
+                        "PptxUrl": "files/lecture/pptx/Lecture19_pptx.pptx"
+                    }
+                },
+                {
+                    "Title": "Αμυντικός προγραμματισμός",
+                    "Files": {
+                        "PdfUrl": "files/lecture/pdf/Lecture20_pdf.pdf",
+                        "PptxUrl": "files/lecture/pptx/Lecture20_pptx.pptx"
+                    }
+                }
+            ]
+        },
+        "En": {
+            "Header": "Lectures",
+            "Set": []
+        }
+    },
+    "ExtraMaterial": {
+        "Header": {
+            "Gr": "Επιπλεον υλικο",
+            "En": "Extra material"
+        },
+        "Tutorials": {
+            "Gr": {
+                "Header": "Φροντιστήρια",
+                "All": {
+                    "Files": {
+                        "PdfUrl": "",
+                        "PptxUrl": "files/tutorial/zip/all_tutorials_pptx.zip"
+                    }
+                },
+                "Set": [{
+                        "Title": "Προγραμματισμός με τη γλώσσα C++ - Σύντομη εισαγωγή",
+                        "Files": {
+                            "PdfUrl": "",
+                            "PptxUrl": "files/tutorial/pptx/front_01.ppt"
+                        }
+
+                    },
+                    {
+                        "Title": "Προγραμματισμός με τη γλώσσα C++ - Βασικά στοιχεία γλώσσας",
+                        "Files": {
+                            "PdfUrl": "",
+                            "PptxUrl": "files/tutorial/pptx/front_02.ppt"
+                        }
+
+                    },
+                    {
+                        "Title": "Προγραμματισμός με τη γλώσσα C++ - Κληρονομικότητα, Πολυμορφισμός",
+                        "Files": {
+                            "PdfUrl": "",
+                            "PptxUrl": "files/tutorial/pptx/front_03.ppt"
+                        }
+
+                    },
+                    {
+                        "Title": "Προγραμματισμός με τη γλώσσα C++ - Namespaces, IO, Exceptions",
+                        "Files": {
+                            "PdfUrl": "",
+                            "PptxUrl": "files/tutorial/pptx/front_04.ppt"
+                        }
+
+                    },
+                    {
+                        "Title": "Προγραμματισμός με τη γλώσσα C++ - Type casting, Strings, Preprocessor directives",
+                        "Files": {
+                            "PdfUrl": "",
+                            "PptxUrl": "files/tutorial/pptx/front_05.ppt"
+                        }
+
+                    },
+                    {
+                        "Title": "Προγραμματισμός με τη γλώσσα C++ - Templates",
+                        "Files": {
+                            "PdfUrl": "",
+                            "PptxUrl": "files/tutorial/pptx/front_06.ppt"
+                        }
+
+                    },
+                    {
+                        "Title": "Προγραμματισμός με τη γλώσσα C++ - Iterators, STL",
+                        "Files": {
+                            "PdfUrl": "",
+                            "PptxUrl": "files/tutorial/pptx/front_07.ppt"
+                        }
+
+                    },
+                    {
+                        "Title": "Προγραμματισμός με τη γλώσσα C++ - Νέα χαρακτηριστικά της C++11",
+                        "Files": {
+                            "PdfUrl": "",
+                            "PptxUrl": "files/tutorial/pptx/front_08.ppt"
+                        }
+
+                    }
+                ]
+            },
+            "En": {
+                "Header": "Tutorials",
+                "All": {
+                    "Files": {
+                        "PdfUrl": "",
+                        "PptxUrl": ""
+                    }
+                },
+                "Set": []
+            }
+        },
+        "SupplementaryMaterial": {
+            "Gr": {
+                "Header": "Συμπληρωματικό Υλικό",
+                "All": {
+                    "Files": {
+                        "PdfUrl": "",
+                        "PptxUrl": ""
+                    }
+                },
+                "Set": [{
+                        "Title": "Employing design perspectives",
+                        "Files": {
+                            "PdfUrl": "files/supplementaryMaterial/pdf/Employing_design_perspectives.pdf",
+                            "PptxUrl": "files/supplementaryMaterial/pptx/Employing_design_perspectives.ppt"
+                        }
+                    },
+                    {
+                        "Title": "Requirements analysis",
+                        "Files": {
+                            "PdfUrl": "files/supplementaryMaterial/pdf/Requirements_analysis.pdf",
+                            "PptxUrl": ""
+                        }
+                    }
+                ]
+            },
+            "En": {
+                "Header": "Supplementary Material",
+                "All": {
+                    "Files": {
+                        "PdfUrl": "",
+                        "PptxUrl": ""
+                    }
+                },
+                "Set": [{
+                        "Title": "Employing design perspectives",
+                        "Files": [{
+                            "PdfUrl": "",
+                            "PptxUrl": ""
+                        }]
+                    },
+                    {
+                        "Title": "Requirements analysis",
+                        "Files": [{
+                            "PdfUrl": "",
+                            "PptxUrl": ""
+                        }]
+                    }
+                ]
+            }
+        }
+    },
+
+    "Project": {
+        "Gr": {
+            "Header": "Εργασια",
+            "Title": "",
+            "StartDate": "",
+            "Deadline": {
+                "Header": "ΛΗΞΗ",
+                "Day": "",
+                "Time": ""
+            },
+            "Files": [{
+                "PdfUrl": ""
+            }]
+
+        },
+        "En": {
+            "Header": "Project",
+            "Title": "",
+            "StartDate": "",
+            "Deadline": {
+                "Header": "END",
+                "Day": "",
+                "Time": ""
+            },
+            "Files": [{
+                "PdfUrl": ""
+            }]
+        }
+    },
+    "Resources": {
+        "Gr": {
+            "Header": "Πηγες",
+            "Set": [{
+                "Heading": "Βιβλιογραφία",
+                "Subheading": "Τίτλοι βιβλίων",
+                "Thumbnail": "img/bibliography.jpg",
+                "ModalName": "resourcesModal1"
+            }, {
+                "Heading": "Χρήσιμοι Σύνδεσμοι",
+                "Subheading": "Εργαλεία, οδηγοί, papers",
+                "Thumbnail": "img/usefullLinks.jpg",
+                "ModalName": "resourcesModal2"
+            }]
+        },
+        "En": {
+            "Header": "Resources",
+            "Set": [{
+                "Heading": "Bibliography",
+                "Subheading": "Book titles",
+                "Thumbnail": "img/bibliography.jpg",
+                "ModalTitle": "resourcesModal1"
+            }, {
+                "Heading": "Useful links",
+                "Subheading": "Tools, guides, papers",
+                "Thumbnail": "img/usefullLinks.jpg",
+                "ModalTitle": "resourcesModal2"
+            }]
+        }
+    },
+    "Bibliography": {
+        "Header": {
+            "Gr": "Βιλιογραφια",
+            "En": "Bibliography"
+        },
+        "Intro": {
+            "Gr": "Το μάθημα βασίζεται επιλεκτικά στην σχετική σύγχρονη βιβλιογραφία, καθώς και στην πρόσφατη πρακτική εμπειρία από την ανάπτυξη μεγάλων συστημάτων λογισμικού στα πλαίσια χρηματοδοτούμενων ερευνητικών προγραμμάτων. Επιπλέον, μερικές τεχνικές που παρουσιάζονται προέρχονται είτε από πρόσφατες σχετικές δημοσιεύσεις, είτε αποτελούν θέμα συζήτησης κάποιων discussion groups στο διαδίκτυο, ή προσφέρονται με διάφορους τρόπους υλοποίησης ως public domain software. Οι σημειώσεις του μαθήματος θα είναι το υλικό των διαλέξεων, το οποίο και θα φορτώνεται στον λογαριασμό του μαθήματος μετά από κάθε διάλεξη (σαν PowerPoint files). Ακολουθεί η σχετική βιβλιογραφία. ",
+            "En": ""
+        },
+        "Resources": [{
+                "Title": "Software Engineering Program  Software Measurement Guidebook. NASA-GB-001-94, Goddard Space Flight Center (GSFC), 1995",
+                "Url": ""
+            },
+            {
+                "Title": "Design Patterns  Elements of Reusable Object-Oriented Software, E. Gamma, R. Helm, R. Johnson, J. Vlissides, Addison-Wesley, 1995",
+                "Url": ""
+            },
+            {
+                "Title": "Software Engineering, I. Sommerville, Addison-Wesley, Fourth Edition, 1992",
+                "Url": ""
+            },
+            {
+                "Title": "Object-Oriented Modeling and Design, J. Rumbaugh, M. Blaha, W. Premerlani, F. Eddy, W. Lorensen, Prentice Hall, 1991",
+                "Url": ""
+            },
+            {
+                "Title": "Modern Structured Analysis, E. Yourdon, Prentice Hall, 1989",
+                "Url": ""
+            },
+            {
+                "Title": "The Unified Modeling Language User Guide, G. Booch, J. Rumbaugh, I. Jacobson, Addison-Wesley, 1997",
+                "Url": ""
+            },
+            {
+                "Title": "Introduction to Software Project Management and Quality Assurance, D. Ince, H. Sharp, M. Woodman, McGraw  Hill, 1993",
+                "Url": ""
+            },
+            {
+                "Title": "C++ Gems, Programming Pearls from the C++ Report, S. Lippman, SIGS, 1996",
+                "Url": ""
+            },
+            {
+                "Title": "Accelerated C++. A. Koenig, B. Moo. Addison-Wesley, 2000",
+                "Url": ""
+            },
+            {
+                "Title": "C++ Standard ISO/IEC 14882, 1998",
+                "Url": ""
+            }
+        ]
+    },
+    "UsefulLinks": {
+        "Header": {
+            "Gr": "Χρησιμοι Συνδεσμοι",
+            "En": "Useful Links"
+        },
+        "Links": [{
+                "Title": "Eiffel Software",
+                "Url": "http://www.eiffel.com/"
+            },
+            {
+                "Title": "An Eiffel Tutorial",
+                "Url": "http://docs.eiffel.com/book/method/eiffel-tutorial-et/"
+            },
+            {
+                "Title": "Touch of Class",
+                "Url": "http://touch.ethz.ch/"
+            },
+            {
+                "Title": "Boost C++ libraries",
+                "Url": "http://www.boost.org/"
+            },
+            {
+                "Title": "Programmers Heaven",
+                "Url": "http://www.programmersheaven.com/"
+            },
+            {
+                "Title": "'tucows' software library",
+                "Url": "http://www.tucows.com/"
+            },
+            {
+                "Title": "C++ Standard Template Library (STL) on-line documentation support",
+                "Url": "http://www.sgi.com/tech/stl/"
+            },
+            {
+                "Title": "Free Software Foundation, GNU",
+                "Url": "http://www.gnu.org/"
+            },
+            {
+                "Title": "Object-oriented programming tips",
+                "Url": "http://ootips.org"
+            },
+            {
+                "Title": "Extreme programming",
+                "Url": "http://www.extremeprogramming.org/"
+            }
+        ]
+    }
+}

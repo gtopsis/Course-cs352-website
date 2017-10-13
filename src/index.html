@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>HY-352 Software engineering</title>
+  <!-- Custom fonts for this template -->
+  <!-- <link href="../node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img class="navbar-brand--uoc-logo" src="./img/logos/uoc_logo.png" alt="" style=""> HY-352
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="course-menu navbar-nav ml-auto">
+          <script type="text/html" id="menuTpl">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#main">
+                <%- menuList[window.lang][0] %>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#lectures">
+                <%- menuList[window.lang][1] %>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#extra-content">
+                <%- menuList[window.lang][2] %>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#project">
+                <%- menuList[window.lang][3] %>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#resources">
+                <%- menuList[window.lang][4] %>
+              </a>
+            </li>
+          </script>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container" style="position:relative">
+      <div class="lang-box">
+        <a href="#" onclick="changeLang(this)">English</a>
+        <a href="#" class="selected-lang" onclick="changeLang(this)">Ελληνικά</a>
+      </div>
+      <div class="course-intro intro-text">
+        <script type="text/html" id="headerTpl">
+          <div class="intro-lead-in">
+            <%- introList[0][window.lang] %>
+          </div>
+          <div class="intro-heading">
+            <%- introList[1][window.lang] %>
+          </div>
+          <div class="intro-details">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <%- introList[2][window.lang][0] %>
+              </li>
+              <li class="list-inline-item">
+                <%- introList[2][window.lang][1] %>
+              </li>
+              <li class="list-inline-item">
+                <%- introList[2][window.lang][2] %>
+              </li>
+              <li class="list-inline-item">
+                <%- introList[2][window.lang][3] %>
+              </li>
+            </ul>
+          </div>
+        </script>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <section id="main">
+    <div class="course-main-info container">
+      <script type="text/html" id="mainInfoTpl">
+        <div class="row">
+          <div class=" col-lg-12 text-center">
+            <h2 class="section-heading">
+              <%- header[window.lang] %>
+            </h2>
+            <h3 class="section-subheading text-muted"></h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="course-description-container col-md-12">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-bullseye fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="course-main-info-heading">
+              <%- description[window.lang].Header %>
+            </h4>
+            <p class="course-description text-muted text-left">
+              <span>
+                <%- description[window.lang].Text %>
+              </span>
+            </p>
+          </div>
+          <div class="course-logistics-container col-md-12">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="course-main-info-heading">
+              <%- scheduleList[window.lang].Header %> &
+                <%- contactList[window.lang].Header %>
+            </h4>
+            <h3 class="section-subheading text-muted"></h3>
+
+            <div class="row">
+              <div class="container col-md-7">
+                <div class="panel panel-default">
+                  <div class="panel panel-primary">
+                    <div class="panel-body">
+                      <table class="table table-striped table-condensed text-left">
+                        <thead>
+                          <tr>
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Type </th>
+                            <th>Classroom</th>
+                          </tr>
+                        </thead>
+                        <tbody class="course-schedule">
+                          <% _.forEach(scheduleList[window.lang].Set, function(lecture) { %>
+                            <tr>
+                              <td>
+                                <%- lecture.Day %>
+                              </td>
+                              <td>
+                                <%- lecture.Time.Start %> -
+                                  <%- lecture.Time.End %>
+                              </td>
+                              <td>
+                                <%- lecture.Type %>
+                              </td>
+                              <td>
+                                <%- lecture.Classroom %>
+                              </td>
+                            </tr>
+                            <% }); %>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container col-md-4">
+                <ul class="course-contact-list list-group list-unstyled text-left">
+                  <li class="d-flex flex-row">
+                    <div class="align-self-center">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x light-orange-color"></i>
+                        <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </div>
+                    <div class="contact-list-item-details d-flex align-self-center flex-column">
+                      <b class="">
+                        <%- contactList[window.lang].Teacher.Name %>
+                      </b>
+                      <i class="">
+                        <%- contactList[window.lang].Teacher.Email %>
+                      </i>
+                    </div>
+                  </li>
+                  <li class="d-flex flex-row">
+                    <div class="align-self-center">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x light-orange-color"></i>
+                        <i class="fa fa-group fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </div>
+                    <div class="contact-list-item-details d-flex flex-column align-self-center">
+                      <b>
+                        <%- contactList[window.lang].CourseList.Name %>
+                      </b>
+                      <i>
+                        <%- contactList[window.lang].CourseList.Email %>
+                      </i>
+                    </div>
+                  </li>
+                  <li class="d-flex flex-row">
+                    <div class="align-self-center">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x light-orange-color"></i>
+                        <i class="fa fa-group fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </div>
+                    <div class="contact-list-item-details d-flex flex-column align-self-center">
+                      <b>
+                        <%- contactList[window.lang].TAList.Name %>
+                      </b>
+                      <i>
+                        <%- contactList[window.lang].TAList.Email %>
+                      </i>
+                    </div>
+                  </li>
+                  <% _.forEach(contactList[window.lang].TAs, function(ta) { %>
+                    <li class="d-flex flex-row">
+                      <div class="align-self-center">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x light-orange-color"></i>
+                          <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </div>
+                      <div class="contact-list-item-details d-flex flex-column align-self-center">
+                        <b>
+                          <%- ta.Name %>
+                        </b>
+                        <i>
+                          <%- ta.Email %>
+                        </i>
+                      </div>
+                    </li>
+                    <% }); %>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </script>
+    </div>
+  </section>
+
+  <!-- Lecture section -->
+  <section class="bg-light" id="lectures">
+    <div class="course-lectures-container container">
+      <script type="text/html" id="lecturesTpl">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">
+              <%- lecturesList[window.lang].Header %>
+            </h2>
+            <h3 class="section-subheading text-muted"></h3>
+          </div>
+        </div>
+        <div class="row">
+          <% if (lecturesList[window.lang].Set.length == 0 ) { %>
+            <p class="empty-content-msg text-center">Not defined yet</p>
+            <% } else { %>
+              <table class="table table-striped table-condensed text-left">
+                <thead>
+                  <tr>
+                    <th class="table-element-title">Title</th>
+                    <th class="table-element-files">Files</th>
+                  </tr>
+                </thead>
+                <tbody class="course-lectures">
+                  <% _.forEach(lecturesList[window.lang].Set, function(lecture) { %>
+                    <tr>
+                      <td class="table-element-title">
+                        <%- lecture.Title %>
+                      </td>
+                      <td class="table-element-files">
+                        <% if (lecture.Files.PdfUrl) { %>
+                          <a onclick="downloadFile('<%- lecture.Files.PdfUrl %>')">
+                            <i class="fa fa-file-pdf-o"></i>
+                          </a>
+                          <% } %>
+                            <% if (lecture.Files.PptxUrl) { %>
+                              <a onclick="downloadFile('<%- lecture.Files.PptxUrl %>')">
+                                <i class="fa fa-file-powerpoint-o"></i>
+                              </a>
+                              <% } %>
+                      </td>
+                    </tr>
+                    <% }); %>
+                </tbody>
+              </table>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <% if (lecturesList[window.lang].All.Files.PdfUrl) { %>
+              <button type="button" class="btn btn-outline-primary" onclick="downloadFile('<%- lecturesList[window.lang].All.Files.PdfUrl %>')">
+                <i class="fa fa-download"></i>
+                Download all lectures (pdf)</button>
+              <% } else { %>
+                <button type="button" class="btn btn-outline-primary" onclick="downloadFile('<%- lecturesList[window.lang].All.Files.PdfUrl %>')"
+                  disabled>
+                  <i class="fa fa-download"></i>
+                  Download all lectures (pdf)</button>
+                <% } %>
+                  <% if (lecturesList[window.lang].All.Files.PptxUrl) { %>
+                    <button type="button" class="btn btn-outline-primary" onclick="downloadFile('<%- lecturesList[window.lang].All.Files.PptxUrl %>')">
+                      <i class="fa fa-download"></i>
+                      Download all lectures (pptx)</button>
+                    <% } else { %>
+                      <button type="button" class="btn btn-outline-primary" onclick="downloadFile('<%- lecturesList[window.lang].All.Files.PptxUrl %>')"
+                        disabled>
+                        <i class="fa fa-download"></i>
+                        Download all lectures (pptx)</button>
+                      <% } %>
+          </div>
+        </div>
+        <% } %>
+      </script>
+    </div>
+  </section>
+
+  <!-- Extra material -->
+  <section class="bg-light" id="extra-content">
+    <div class="course-extra-material-container container">
+      <script type="text/html" id="extraMaterialTpl">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">
+              <%- header[window.lang] %>
+            </h2>
+            <h3 class="section-subheading text-muted">Το υλικό των προηγούμενων ακαδημαικών ετών βρίσκεται
+              <a href="http://www.csd.uoc.gr/~hy352/old-site/index.html" target="_blank">εδώ</a>
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="tabbable-panel">
+              <div class="tabbable-line ">
+                <ul class="nav nav-tabs text-center d-flex justify-content-center">
+                  <li class="active">
+                    <a href="#tab_default_1" data-toggle="tab" class="">
+                      <%- tutorialsList[window.lang].Header %>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tab_default_2" data-toggle="tab" class="">
+                      <%- supplementaryMaterialList[window.lang].Header %>
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab_default_1">
+                    <% if (tutorialsList[window.lang].Set.length == 0 ) { %>
+                      <p class="empty-content-msg text-center">Not defined yet</p>
+                      <% } else { %>
+                        <table class="table table-striped table-condensed text-left">
+                          <thead>
+                            <tr>
+                              <th class="table-element-title">Title</th>
+                              <th class="table-element-files">Files</th>
+                            </tr>
+                          </thead>
+                          <tbody class="course-tutorials">
+                            <% _.forEach(tutorialsList[window.lang].Set, function(tutorial) { %>
+                              <tr>
+                                <td class="table-element-title">
+                                  <%- tutorial.Title %>
+                                </td>
+                                <td class="table-element-files">
+                                  <% if (tutorial.Files.PdfUrl) { %>
+                                    <a onclick="downloadFile('<%- tutorial.Files.PdfUrl %>')">
+                                      <i class="fa fa-file-pdf-o"></i>
+                                    </a>
+                                    <% } %>
+                                      <% if (tutorial.Files.PptxUrl) { %>
+                                        <a onclick="downloadFile('<%- tutorial.Files.PptxUrl %>')">
+                                          <i class="fa fa-file-powerpoint-o"></i>
+                                        </a>
+                                        <% } %>
+                                </td>
+                              </tr>
+                              <% }); %>
+                          </tbody>
+                        </table>
+                        <div class="row">
+                          <div class="col-lg-12 text-center">
+                            <% if (tutorialsList[window.lang].All.Files.PdfUrl) { %>
+                              <button type="button" class="btn btn-outline-primary" onclick="downloadFile('<%- tutorialsList[window.lang].All.Files.PdfUrl %>')">
+                                <i class="fa fa-download"></i>
+                                Download all tutorials (pdf)</button>
+                              <% } else { %>
+                                <button type="button" class="btn btn-outline-primary" onclick="downloadFile('<%- tutorialsList[window.lang].All.Files.PdfUrl %>')"
+                                  disabled>
+                                  <i class="fa fa-download"></i>
+                                  Download all tutorials (pdf)</button>
+                                <% } %>
+                                  <% if (tutorialsList[window.lang].All.Files.PptxUrl) { %>
+                                    <button type="button" class="btn btn-outline-primary" onclick="downloadFile('<%- tutorialsList[window.lang].All.Files.PptxUrl %>')">
+                                      <i class="fa fa-download"></i>
+                                      Download all tutorials (pptx)</button>
+                                    <% } else { %>
+                                      <button type="button" class="btn btn-outline-primary" onclick="downloadFile('<%- tutorialsList[window.lang].All.Files.PptxUrl %>')"
+                                        disabled>
+                                        <i class="fa fa-download"></i>
+                                        Download all tutorials (pptx)</button>
+                                      <% } %>
+                          </div>
+                        </div>
+                        <% } %>
+                  </div>
+
+                  <div class="tab-pane" id="tab_default_2">
+                    <% if (supplementaryMaterialList[window.lang].Set.length == 0 ) { %>
+                      <p class="empty-content-msg text-center">Not defined yet</p>
+                      <% } else { %>
+                        <table class="table table-striped table-condensed text-left">
+                          <thead>
+                            <tr>
+                              <th class="table-element-title">Title</th>
+                              <th class="table-element-files">Files</th>
+                            </tr>
+                          </thead>
+                          <tbody class="course-supplementary-material">
+                            <% _.forEach(supplementaryMaterialList[window.lang].Set, function(supplementaryMaterial) { %>
+                              <tr>
+                                <td class="table-element-title">
+                                  <%- supplementaryMaterial.Title %>
+                                </td>
+                                <td class="table-element-files">
+                                  <% if (supplementaryMaterial.Files.PdfUrl) { %>
+                                    <a onclick="downloadFile('<%- supplementaryMaterial.Files.PdfUrl %>')">
+                                      <i class="fa fa-file-pdf-o"></i>
+                                    </a>
+                                    <% } %>
+                                      <% if (supplementaryMaterial.Files.PptxUrl) { %>
+                                        <a onclick="downloadFile('<%- supplementaryMaterial.Files.PptxUrl %>')">
+                                          <i class="fa fa-file-powerpoint-o"></i>
+                                        </a>
+                                        <% } %>
+                                </td>
+                              </tr>
+                              <% }); %>
+                          </tbody>
+                        </table>
+                        <div class="row">
+                          <div class="col-lg-12 text-center">
+                            <% if (supplementaryMaterialList[window.lang].All.Files.PdfUrl) { %>
+                              <button type="button" class="btn btn-outline-primary" onclick="downloadFile('<%- supplementaryMaterialList[window.lang].All.Files.PdfUrl %>')">
+                                <i class="fa fa-download"></i>
+                                Download all files (pdf)</button>
+                              <% } else { %>
+                                <button type="button" class="btn btn-outline-primary" onclick="downloadFile('<%- supplementaryMaterialList[window.lang].All.Files.PdfUrl %>')"
+                                  disabled>
+                                  <i class="fa fa-download"></i>
+                                  Download all files (pdf)</button>
+                                <% } %>
+                                  <% if (supplementaryMaterialList[window.lang].All.Files.PptxUrl) { %>
+                                    <button type="button" class="btn btn-outline-primary" onclick="downloadFile('<%- supplementaryMaterialList[window.lang].All.Files.PptxUrl %>')">
+                                      <i class="fa fa-download"></i>
+                                      Download all files (pptx)</button>
+                                    <% } else { %>
+                                      <button type="button" class="btn btn-outline-primary" onclick="downloadFile('<%- supplementaryMaterialList[window.lang].All.Files.PptxUrl %>')"
+                                        disabled>
+                                        <i class="fa fa-download"></i>
+                                        Download all files (pptx)</button>
+                                      <% } %>
+                          </div>
+                        </div>
+                        <% } %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </script>
+    </div>
+  </section>
+
+  <!-- Project -->
+  <section id="project">
+    <div class=" course-project-container container">
+      <script type="text/html" id="projectTpl">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">
+              <%- projectList[window.lang].Header %>
+            </h2>
+            <h3 class="section-subheading text-muted"></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/logos/c++ logo.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h5>
+                      <%= projectList[window.lang].Title || ((window.lang == "Gr") ? "Δεν εχει οριστει ακομα":"Not defined yet") %>
+                    </h5>
+                    <h6 class="subheading">
+                      <%- projectList[window.lang].StartDate || "---" %>
+                    </h6>
+                  </div>
+                  <div class="timeline-body">
+                    <% if (projectList[window.lang].Title.trim() != "") { %>
+                      <button type="button" class="btn btn-outline-primary" onclick="downloadFile('<%- projectList[window.lang].Files.PdfUrl %>')">
+                        <i class="fa fa-download"></i>
+                        Download project</button>
+                      <% } %>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>
+                    <%- projectList[window.lang].Deadline.Header %>
+                      <br>
+                      <%- projectList[window.lang].Deadline.Day || "---" %>
+                        <br>
+                        <%- projectList[window.lang].Deadline.Time || "" %>
+                  </h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </script>
+    </div>
+  </section>
+
+  <!-- resources Grid -->
+  <section class="bg-cloud-color" id="resources">
+    <div class="course-resources-container container">
+      <script type="text/html" id="resourcesTpl">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">
+              <%- resourcesList[window.lang].Header %>
+            </h2>
+            <h3 class="section-subheading text-muted"></h3>
+          </div>
+        </div>
+        <div class="row">
+          <% _.forEach(resourcesList[window.lang].Set, function(resource) { %>
+            <div class="col-md-4 col-sm-6 resources-item">
+              <a class="resources-link" data-toggle="modal" href="#<%- resource.ModalName %>">
+                <div class="resources-hover">
+                  <div class="resources-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="<%- resource.Thumbnail %>" alt="">
+              </a>
+              <div class="resources-caption">
+                <h4>
+                  <%- resource.Heading %>
+                </h4>
+                <p class="text-muted">
+                  <%- resource.Subheading %>
+                </p>
+              </div>
+            </div>
+            <% }); %>
+        </div>
+      </script>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <span class="copyright">Copyright &copy; HY-352 2017-2018</span>
+        </div>
+        <div class="col-md-12">
+          <span style="font-size: 0.8em">Based on the template Agency from
+            <a href="https://startbootstrap.com/template-overviews/agency/">Start Bootstrap</a>
+          </span>
+        </div>
+        <div class="col-md-12">
+          <span style="font-size: 0.8em">Implemented by Georgios Topsis</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- resources Modals -->
+
+  <!-- Modal 1 Bibliography -->
+  <div class="resources-modal modal fade" id="resourcesModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="course-bibliography modal-body">
+                <!-- Bibliography Details Go Here -->
+                <script type="text/html" id="bibliographyTpl">
+                  <h2>
+                    <%- header[window.lang] %>
+                  </h2>
+                  <div class="">
+                    <p class=" item-intro text-muted text-left">
+                      <%- intro[window.lang] %>
+                    </p>
+                    <ul class="text-left">
+                      <% _.forEach(resources, function(resource) { %>
+                        <li class="bibliography-resource-item">
+                          <div>
+                            <span>
+                              <%- resource.Title %>
+                            </span>
+                          </div>
+                          <a href="<%- resource.Url %>">
+                            <%- resource.Url %>
+                          </a>
+                        </li>
+                        <% }); %>
+                    </ul>
+                  </div>
+                </script>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Go back</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="resources-modal modal fade" id="resourcesModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="course-useful-links modal-body">
+                <!-- Project Details Go Here -->
+                <script type="text/html" id="usefulLinksTpl">
+                  <h2>
+                    <%- header[window.lang] %>
+                  </h2>
+                  <p class="item-intro text-muted text-left">
+                    <ul class=" text-left">
+                      <% _.forEach(links, function(link) { %>
+                        <li>
+                          <a href="<%- link.Url %>">
+                            <%- link.Title %>
+                          </a>
+                        </li>
+                        <% }); %>
+                    </ul>
+                  </p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Go back</button>
+                  </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Password Modal -->
+  <div class="password-modal modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body text-center">
+                <!-- Project Details Go Here -->
+                <h2>Unlock files</h2>
+                <p class="item-intro text-muted">Μόνο οι φοιτητές του μαθήματος μπορούν να αποκτήσουν τον κωδικό επικοινονώντας στο hy352-list [at] csd.uoc.gr</p>
+                <div id="unlockFilesForm" class="">
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="password" name="password" placeholder="Password" tabindex="-1" class="form-control" required autofocus>
+                    </div>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <p class="wrong-password-msg" style="color:red"></p>
+                    <button class="btn btn-outline-primary text-center" onclick="downloadFile('default')">
+                      <i class="fa fa-unlock"></i>
+                      Unlock the files
+                    </button>
+                  </div>
+                </div>
+                <button class="btn btn-primary text-center" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Maybe later
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
+// Global CSS
+@import "global.scss";
+// Components
+@import "navbar.scss";
+@import "masthead.scss";
+@import "course-main-info.scss";
+@import "resources.scss";
+@import "timeline.scss";
+@import "footer.scss";
+@import "bibliography.scss";
+// Bootstrap Overrides
+@import "bootstrap-overrides.scss";
