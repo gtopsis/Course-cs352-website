@@ -2,7 +2,9 @@
 
 # CS352 Website
 
-Renew website of the course cs352 using a bootstrap template
+Static website for the course cs352 using a bootstrap template. It serves the content (lectures, tuts, assignments) of the course only to its participants (students) who acquire a specific password. 
+
+
 
 ## Installation
 ```
