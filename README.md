@@ -4,7 +4,8 @@
 
 Static website for the course cs352 using a bootstrap template. It serves the content (lectures, tuts, assignments) of the course only to its participants (students) who acquire a specific password. 
 
-
+## Live
+https://gt0p.github.io/cs352-website/dist/
 
 ## Installation
 ```
