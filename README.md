@@ -1,10 +1,5 @@
 
 
-todo
-
-broswersync configuration
-
-
 # CS352 Website
 
 Renew website of the course cs352 using a bootstrap template
