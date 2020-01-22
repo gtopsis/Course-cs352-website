@@ -43,7 +43,7 @@ Static website for the course cs352 in Computer Science department at UOC using 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-[Live](https://gt0p.github.io/cs352-website/dist/)
+[Live](https://gtopsis.github.io/cs352-website/dist/)
 
 <!-- LICENSE -->
 ## License
@@ -56,15 +56,13 @@ CS-352 All rights reserved.
 
 George Topsis - [Github profile](https://github.com/gtopsis)
 
-Project Link: [https://github.com/gtopsis/gtopsis.github.io](https://github.com/gtopsis/gtopsis.github.io)
+Project Link: [https://github.com/gtopsis/cs352-website](https://github.com/gtopsis/cs352-website)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Start Bootstrap Themes](https://startbootstrap.com/themes/agency/)
-
-
 
 
 
