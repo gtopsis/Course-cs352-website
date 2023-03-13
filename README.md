@@ -10,27 +10,10 @@
 
 
 
-<!-- TABLE OF CONTENTS -->
-## Table of Contents
-
-* [About the Project](#about-the-project)
-* [Usage](#usage)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
-  <!-- * [Built With](#built-with) -->
-<!-- * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation) -->
-<!-- * [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license) -->
-
-
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Website for the course CS352
 
-Course CS352 Website
 
 Static website for the course cs352 (year 2016) in Computer Science department at UOC. It serves the content (lectures, tuts, assignments) of the course only to this course participants (students, teaching assoistants, proffesor) who acquire a specific password.
 
@@ -40,11 +23,6 @@ Used the Agency bootstrap template (https://startbootstrap.com/themes/agency/).
 
 <!-- There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
 
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-[Live](https://gtopsis.github.io/cs352-website/dist/)
 
 <!-- LICENSE -->
 ## License
