@@ -15,11 +15,11 @@
 ## Website for the course CS352
 
 
-Static website for the course cs352 (year 2016) in Computer Science department at UOC. It serves the content (lectures, tuts, assignments) of the course only to this course participants (students, teaching assoistants, proffesor) who acquire a specific password.
+Static website for the course cs352 (year 2017-2018) in Computer Science department at UOC. It serves the content (lectures, tuts, assignments) of the course only to this course participants (students, teaching assoistants, proffesor) who acquire a specific password.
 
 Used the Agency bootstrap template (https://startbootstrap.com/themes/agency/).
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](Website screenshot){:height="36px" width="36px"}
 
 <!-- There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
 
