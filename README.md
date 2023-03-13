@@ -32,8 +32,9 @@
 
 Course CS352 Website
 
-Static website for the course cs352 in Computer Science department at UOC using Agency bootstrap template (https://startbootstrap.com/themes/agency/). It serves the content (lectures, tuts, assignments) of the course only to course participants (students, teaching assoistants, proffesor) who acquire a specific password. 
+Static website for the course cs352 (year 2016) in Computer Science department at UOC. It serves the content (lectures, tuts, assignments) of the course only to this course participants (students, teaching assoistants, proffesor) who acquire a specific password.
 
+Used the Agency bootstrap template (https://startbootstrap.com/themes/agency/).
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
@@ -49,15 +50,6 @@ Static website for the course cs352 in Computer Science department at UOC using 
 ## License
 
 CS-352 All rights reserved.
-
-
-<!-- CONTACT -->
-## Contact
-
-George Topsis - [Github profile](https://github.com/gtopsis)
-
-Project Link: [https://github.com/gtopsis/cs352-website](https://github.com/gtopsis/cs352-website)
-
 
 
 <!-- ACKNOWLEDGEMENTS -->
