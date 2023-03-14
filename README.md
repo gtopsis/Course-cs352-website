@@ -1,23 +1,13 @@
 
-<!-- PROJECT SHIELDS -->
-<!-- [![Contributors][contributors-shield]][contributors-url] -->
-<!-- [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]  -->
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-
-
 <!-- ABOUT THE PROJECT -->
 ## Website for the course CS352
 
 
-Static website for the course cs352 (year 2017-2018) in Computer Science department at UOC. It serves the content (lectures, tuts, assignments) of the course only to this course participants (students, teaching assoistants, proffesor) who acquire a specific password.
+Static website for the course cs352 (year 2017-2018) in Computer Science department at UOC. It was serving the content (lectures, tutorials, assignments and course project) of the course only to this course's participants (students, teaching assoistants, proffesor) who acquire a specific password.
 
 Used the Agency bootstrap template (https://startbootstrap.com/themes/agency/).
+
+*Note*: Currently, the website of this course has been extended a bit and so, I present a screenshot of the work I had done back then. 👇
 
 <img src="images/cs352-website.png" alt="Website screenshot" width="45%">
 
