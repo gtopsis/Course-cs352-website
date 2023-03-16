@@ -2,19 +2,19 @@
 <!-- ABOUT THE PROJECT -->
 ## Website for the course CS352
 
-
 Static website for the course cs352 (year 2017-2018) in Computer Science department at UOC. It was serving the content (lectures, tutorials, assignments and course project) of the course only to this course's participants (students, teaching assoistants, proffesor) who acquire a specific password.
 
-The [Agency bootstrap template](https://startbootstrap.com/themes/agency/) has been used.
-
-**Note**: Currently, the [website](https://www.csd.uoc.gr/~hy352/) of this course has been extended a bit and so, I present a screenshot of the work I had done back then. 👇
 
 <!-- DEMO -->
 ## Demo
 
 Visit [demo](https://gtopsis.github.io/Course-cs352-website/)
 
-<!-- There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
+## Acknowledgements
+
+The [Agency bootstrap template](https://startbootstrap.com/themes/agency/) has been used.
+
+**Note**: Currently, the [website](https://www.csd.uoc.gr/~hy352/) of this course has been extended a bit and so, I present a screenshot of the work I had done back then. 👇
 
 
 <!-- LICENSE -->
