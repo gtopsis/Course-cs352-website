@@ -9,7 +9,9 @@ The [Agency bootstrap template](https://startbootstrap.com/themes/agency/) has b
 
 **Note**: Currently, the [website](https://www.csd.uoc.gr/~hy352/) of this course has been extended a bit and so, I present a screenshot of the work I had done back then. 👇
 
-<img src="images/cs352-website.png" alt="Website screenshot" width="45%">
+##Demo
+
+Visit [demo](https://gtopsis.github.io/Course-cs352-website/)
 
 <!-- There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
 
