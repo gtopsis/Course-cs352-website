@@ -10,7 +10,7 @@ The [Agency bootstrap template](https://startbootstrap.com/themes/agency/) has b
 **Note**: Currently, the [website](https://www.csd.uoc.gr/~hy352/) of this course has been extended a bit and so, I present a screenshot of the work I had done back then. 👇
 
 <!-- DEMO -->
-##Demo
+## Demo
 
 Visit [demo](https://gtopsis.github.io/Course-cs352-website/)
 
