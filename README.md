@@ -2,7 +2,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Website for the course CS352
 
-Static website for the course cs352 (year 2017-2018) in Computer Science department at UOC. It was serving the content (lectures, tutorials, assignments and course project) of the course only to this course's participants (students, teaching assoistants, proffesor) who acquire a specific password.
+Static website for the course cs352 - Software Engineering (academic year 2017-2018) in Computer Science department at University of Crete. It was serving the content (lectures, tutorials, assignments and course project) of the course only to this course's participants (students, teaching assoistants, proffesor) who acquire a specific password.
 
 
 <!-- DEMO -->
